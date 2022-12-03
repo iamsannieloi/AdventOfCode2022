@@ -4,7 +4,7 @@ use crate::common;
 pub fn solution() -> i32 {
   let mut calories = Vec::new();
   let mut current = 0;
-  let lines = common::lines_from_file("../inputs/day1.txt").expect("did the file get read?");
+  let lines = common::lines_from_file("../inputs/day01.txt").expect("did the file get read?");
   for line in lines {
     if line.is_empty() {
       calories.push(current);
